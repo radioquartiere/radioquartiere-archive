@@ -8,6 +8,17 @@ body{
 	color: white;
 }
 
+@media only screen and (max-width: 600px) {
+	.content {
+		margin-top: 200px;
+		color: white;
+	}
+
+	#rj-player .player-v3.player-medium #rj-cover {
+	    display: none;
+	}
+}
+
 /* Player */
 .font-emphasis {
   font-weight: bold;
