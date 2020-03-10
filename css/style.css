@@ -8,6 +8,10 @@ body{
 	color: white;
 }
 
+.content-chat{
+	margin-top: 170px;
+}
+
 a {
     color: #794DFF;
     text-decoration: none;
