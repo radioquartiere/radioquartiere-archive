@@ -473,7 +473,7 @@ ul.icons-ul > li .icon-li {
 }
 #rj-player .rjp-player-container .jp-mute,
 #rj-player .rjp-player-container .jp-unmute {
-  background: #007bff;
+  background: #794DFF;
   color: #ffffff;
   display: block;
   width: 30px;
@@ -549,7 +549,7 @@ ul.icons-ul > li .icon-li {
   height: 150px;
 }
 #rj-player .player-v3 .rjp-label {
-  color: #007bff;
+  color: #794DFF;
 }
 #rj-player .player-v3 #rj-cover {
   float: left;
