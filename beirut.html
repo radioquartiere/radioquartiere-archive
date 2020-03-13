@@ -4,21 +4,43 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Radio Quartiere - Milano</title>
+<title>Radio Quartiere - Beirut | راديو الحي من بيروت</title>
 <meta name="description" content="Radio Quartiere">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
+<link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css">
 <script src="https://kit.fontawesome.com/091a1ee954.js" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa&display=swap" rel="stylesheet"> -->
+
+<!-- <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan&display=swap" rel="stylesheet"> -->
+
+<link href="https://fonts.googleapis.com/css?family=Lateef&display=swap" rel="stylesheet">
+
+
+<style>
+	body {
+		font-family: 'Lateef', cursive;
+		direction: rtl;
+	}
+
+	#player {
+		direction: ltr;
+	}
+
+	#about {
+		font-size: 2.4em;
+	    line-height: 1em;
+	}
+</style>
 </head>
 
 <body>
 
-<div class="container-fluid">
+<div class="container-fluid" dir="rtl">
 	<div class="row">
 
-		<div class="col-lg-12">
+		<div id="player" class="col-lg-12">
 
 			<div id="rj-player" class="fixed-top">
 			 <div class="player-v3 player-medium">
@@ -27,7 +49,7 @@
 			  </div>
 			  <div class="info">
 			   <div class="rjp-trackinfo-container">
-			    <h4 class="rjp-label">Now playing:</h4>
+			    <h4 class="rjp-label">تستمعون الآن::</h4>
 			    <p id="trackInfo" class="rjp-info"></p>
 			   </div>
 			   <div class="rjp-player-container">
@@ -58,14 +80,23 @@
 
 		</div>
 
-		<div class="col-lg-8 content">
-			<h1>RADIOQUARTIERE – Beirut Edition.</h1>
-			<h1>Yalla!</h1>
+		<div class="col-lg-9 content">
+			<p id="about" class="content" dir="rtl">
+				<a href="mailto:projects@mansionblatt.org">راديو الحي</a> هو مشروع تشارك، بوقت صعب فيه التشارك نظراً للحجر الصحّي يلّي عايشينه. نحنا مجموعة من الأصدقاء، عايشين ببيروت، منجتمع ب <a href="mansionblatt.org">مانشن</a>، بحي زقاق البلاط. 
+				<br>
+				<br>
+				برنامجنا عفوي جدّاً. منتشارك موسيقا عبالنا نسمعها سوا، منقرأ كتب، منبث تسجيلات صوتيّة من الماما، مواد من أرشيف راديوهات تاريخيّة، وما إلى ذلك. رح تسمعونا عم نسلّم على أصدقاءنا، ب بيروت وخارجها. وعم نوزّع حب يمين وشمال. لأنّا كلنا بحاجة لحب هي الأيّام. 
+				<br>
+				<br>
+				يمكن الشي الوحيد الناقص هو العبطات والبوسات. بس يمكن رح تحسّوا فيهن وإنتوا عم بتسمعونا. 
+				<br>
+				<br>
+				على وتيرة بطيئة، تعوا نسمع. 
+			</p>
 		</div>
-
 		<div class="col-lg-4 content">
 
-		</div>
+		</div> 
 
 		</body>
 
