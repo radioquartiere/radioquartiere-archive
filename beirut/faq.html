@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Radio Quartiere - Beirut | راديو الحي من بيروت</title>
+<meta name="description" content="Radio Quartiere">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
+<link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/style.css">
+<script src="https://kit.fontawesome.com/091a1ee954.js" crossorigin="anonymous"></script>
+<!-- <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa&display=swap" rel="stylesheet"> -->
+
+<!-- <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan&display=swap" rel="stylesheet"> -->
+
+<link href="https://fonts.googleapis.com/css?family=Lateef&display=swap" rel="stylesheet">
+
+
+<style>
+	body {
+		font-family: 'Lateef', cursive;
+		direction: rtl;
+		background-color: black;
+		color: white;
+	}
+
+	.everything {
+		margin-top: 5em;
+		font-size: 1.5em;
+		line-height: 1em;
+	}
+</style>
+</head>
+
+<body>
+
+<div class="container-fluid" dir="rtl">
+
+	<div class="row everything">
+
+		<div class="col-lg-2 content">
+		</div> 
+
+		<div class="col-lg-8 content">
+			<p class="faq" dir="rtl">
+				س. شو قصّة هذا الراديو؟
+				<br>
+				ج. هذا المشروع ملهم من مشروع راديوا كوارتيرة، يلّي عمله أصدقاء ب ميلانو مشان يسلّوا بعض بالحجر الصحّي. قلنا منعمل نفس الشي. 
+			</p>
+
+			<p class="faq" dir="rtl">
+				س. مين “نحن”؟ 
+				<br>
+				ج. يلّي بلّش المشروع هو <a href="https://majdal.cc">مجد الشهابي</a> ، بس كمّلوا فيه كثير أصدقاء وصديقات. كثير منهن ب لبنان، بس كمان كثار برّا. يمكن حط أساميهن هون إذا وافقوا هن. رح اسألهن. 
+			</p>
+			<p class="faq" dir="rtl">
+				س. بحب أسوق الإذاعة! كيف؟
+				<br>
+				ج. إبعت/ي لمجد إذا بتحبّي، بس قريباً منعمل طريقة ممنهجة أكثر للمشاركة. 
+			</p>
+			<p class="faq" dir="rtl">
+				س. أنا كمان بدّي أعمل إذاعة! 
+				<br>
+				ج. سهلة كثير! عملناها على خدمة إسمها Radiojar، بتكلّف ٢٠ دولار بالشهر. إذا بتحبّوا مساعدة تقنيّة لتنشؤوا موقع مشابه ممكن يكون ضمن نطاقنا على (radioquartiere.online) إبعتولنا ونحنا منزبّط.
+			</p>
+			<p class="faq" dir="rtl">
+				س. شو ساعات البث؟ 
+				<br>
+				ج. من الصبح لحد ما الديجي تتعب!
+			</p>
+
+			</p>
+		</div>
+
+		<div class="col-lg-2 content">
+		</div> 
+	</div>
+
+</body>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://www.radiojar.com/wrappers/api-plugins/v1/radiojar-min.js"></script>
+
+
+<script>
+ rjq('#rjp-radiojar-player').radiojar('player', {
+  "streamName": "77mh9vd3rtzuv", // HEY HEY HEY, PASTE HERE YOUR RADIO JAR STREAM CODE <3
+  "enableUpdates": true,
+  "defaultImage": "img/logo.png",
+  "autoplay":false
+ });
+ rjq('#rjp-radiojar-player').off('rj-track-load-event');
+ rjq('#rjp-radiojar-player').on('rj-track-load-event', function(event, data) {
+   updateInfo(data);
+   if (data.title != "" || data.artist != "") {
+     rjq('.rjp-trackinfo-container').show();
+     rjq('#trackInfo').html(data.artist + ' - "' + data.title + '"')
+   } else {
+     rjq('.rjp-trackinfo-container').hide();
+   }
+ });
+
+ function updateInfo(data) {
+   if (data.thumb) {
+     rjq('#rj-cover').html('<a href="#"><img src="' + data.thumb + '" alt="" title="" /></a>')
+   } else {
+     rjq('#rj-cover').html('')
+   }
+ }
+</script>
+
+
+</body>
+</html>
