@@ -3,6 +3,22 @@ body{
 	font-family: 'Inter', sans-serif;
 }
 
+p {
+	font-size: 21px;
+}
+
+.btn-primary{
+	background-color: #794DFF;
+	border: none;
+}
+
+.btn-primary:hover{
+	background-color: #794DFF;
+	border: none;
+}
+
+
+
 .content {
 	margin-top: 200px;
 	color: white;
