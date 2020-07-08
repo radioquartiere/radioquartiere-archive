@@ -7,6 +7,17 @@ p {
 	font-size: 21px;
 }
 
+hr {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border: 0;
+    border-top: 1px solid #585858;
+}
+
+h2{
+	color:#585858!important;
+}
+
 .btn-primary{
 	background-color: #794DFF;
 	border: none;
