@@ -1,0 +1,67 @@
+.btn {
+  border-radius: 100px;
+  padding: 0.75rem 0.75rem;
+}
+
+.purple{
+  color: #794DFF;
+}
+
+.modal-content{
+  background-color: #DCDCDC!important;
+  padding: 0!important;
+  color: black;
+}
+
+.modal-header {
+  padding: 0!important;
+}
+
+.modal-dialog{
+  margin: 0;
+}
+
+.modal-content{
+  padding: 1rem;
+}
+
+button:focus {
+    outline: none!important;
+}
+
+.modal-content h3 {
+  font-size: 1.5rem;
+  letter-spacing: -1px;
+  padding-bottom: 1rem;
+  font-weight: 625;
+}
+
+h4 {
+  cursor:pointer;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 576px) {
+
+  .modal-content{
+    padding: 0 1rem 2rem ;
+    font-weight: bold;
+  }
+
+  .modal-dialog {
+    max-width: 100%!important;
+    margin: 0!important;
+  }
+
+  .modal-content h3 {
+      padding-bottom: 3rem;
+      letter-spacing: -1px;
+      font-size: 3rem!important;
+      font-weight: 625;
+  }
+
+  h4 {
+    font-size:1.5rem;
+  }
+
+}
